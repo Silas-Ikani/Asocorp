@@ -8,12 +8,15 @@ body {
 }
 
 .asocorp-header {
+    background-image: url(../Images/istockphoto-1212891045-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     height: 98vh;
-    overflow: hidden;
 }
 
-.asocorp-bg-frame {
+/* .asocorp-bg-frame {
     position: absolute;
     top: 0;
     left: 0;
@@ -28,15 +31,15 @@ body {
     height: auto;
     object-fit: cover;
     object-position: center;
-    /* transform: scale(0.9); */
-    /* opacity: 0.6; */
-}
+    transform: scale(0.9);
+    opacity: 0.6;
+} */
 
-.asocorp-navbar,
+/* .asocorp-navbar,
 .asocorp-hero {
     position: relative;
     z-index: 2;
-}
+} */
 
 /* Navbar */
 .asocorp-navbar {
@@ -191,14 +194,24 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: space-around;
+    /* gap: 1rem; */
 }
 
 .asocorp-about__image {
     flex: 1;
     max-width: 100%;
     height: auto;
+}
+.asocorp-about__image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.asocorp-about__image img:hover {
+    transform: scale(1.03);
 }
 
 .asocorp-about__text {
@@ -226,6 +239,11 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
+    transition: 0.3s ease;
+}
+.asocorp-about__btn:hover {
+    color: #007bff;
+    text-decoration: underline;
 }
 
 
