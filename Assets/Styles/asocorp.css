@@ -235,22 +235,138 @@ body {
 }
 
 .asocorp-about__btn {
-    color: #111;
+    color: #007bff;
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
     transition: 0.3s ease;
 }
 .asocorp-about__btn:hover {
-    color: #007bff;
     text-decoration: underline;
 }
 
 
+/* Split section */
+.asocorp-split {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feature {
+    flex: 1;
+    padding: 2.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.feature h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem 0;
+    font-weight: 700;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+.feature a {
+    background: #fff;
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 0.5rem;
+    width: fit-content;
+    min-width: 150px;
+    text-align: center;
+}
+
+.feature-apps {
+    background: url(../Images/istockphoto-1212891045-612x612.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: right;
+    align-items: end;
+
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.feature-infrastructure {
+    background: url(../Images/hero-bg.jpeg) no-repeat center center;
+    background-size: cover;
+    text-align: left;
+    align-items: start;
+
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 
+/* Highlights section */
+.asocorp-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 6%;
+    background: linear-gradient(to right, #f0f0f0, #e4e4e4);
+    flex-wrap: wrap;
+}
 
+.highlight-text {
+    /* flex: 1 1 45%; */
+    color: #111;
+}
 
+.highlight-text h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+}
 
+.highlight-text p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
 
+.highlight-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: #111;
+    border: 2px solid #007bff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.highlight-btn:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.highlight-img {
+    /* flex: 1 1 50%; */
+    text-align: right;
+}
+
+.highlight-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
