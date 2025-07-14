@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scrollbar-color: #000 transparent;
+    scrollbar-color: #fff transparent;
     scrollbar-width: thin;
 }
+
 body {
     font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+    background-color: #020219;
 }
 
 .asocorp-header {
@@ -16,7 +19,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 98vh;
+    height: 100vh;
 }
 
 /* Navbar */
@@ -25,7 +28,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.993);
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .asocorp-navbar__logo {
@@ -34,8 +37,7 @@ body {
 }
 
 .asocorp-navbar__logo img {
-    width: 180px;
-    border-radius: 15px;
+    width: 135px;
 }
 
 .asocorp-navbar__nav {
@@ -52,7 +54,7 @@ body {
     text-decoration: none;
     color: #111;
     font-size: 0.92rem;
-    font-weight: 500;
+    font-weight: normal;
     padding: 0.7rem;
     display: inline-block;
     transition: 0.2s ease;
@@ -73,7 +75,7 @@ body {
 
 .asocorp-navbar__dropdown-menu {
     position: absolute;
-    top: calc(100% + 17px);
+    top: calc(100% + 20px);
     left: 0;
     min-width: 120px;
     background: rgba(255, 255, 255, 0.993);
@@ -161,3 +163,132 @@ body {
     background: #005ec0;
 }
 
+
+/* Section 2 */
+.asocorp-section2 {
+    padding: 4rem 2rem;
+    background: #020219;
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+.asocorp-section2 .section-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.asocorp-section2 h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.asocorp-section2 p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* highlight section */
+.asocorp-highlight {
+    position: relative;
+    height: 60vh;
+    background-image: url(../Images/hero-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image-overlay {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 38, 80, 0.9); /* dark blue */
+    width: 40%;
+    padding: 3rem;
+    margin-left: 10%;
+    margin-top: 8%;
+    color: #fff;
+    border-radius: 0.25rem;
+}
+
+.highlight-content {
+    max-width: 500px;
+}
+
+.highlight-content .label {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.highlight-content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.asocorp-btn {
+    padding: 0.75rem 1.5rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.asocorp-btn:hover {
+    background: #005ec0;
+}
+
+/* CTA section */
+.asocorp-cta {
+    background: #020219;
+    padding: 3rem 5%;
+    text-align: center;
+    color: #fff;
+}
+
+.asocorp-cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.asocorp-cta p {
+    font-size: 0.9rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+}
+
+.asocorp-cta .cta-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-outline {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-outline:hover {
+    background: #fff;
+    color: #1c4d42;
+}
