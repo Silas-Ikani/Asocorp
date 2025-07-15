@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.993);
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .asocorp-navbar__logo {
@@ -26,8 +26,7 @@ body {
 }
 
 .asocorp-navbar__logo img {
-    width: 180px;
-    border-radius: 15px;
+    width: 135px;
 }
 
 .asocorp-navbar__nav {
@@ -65,7 +64,7 @@ body {
 
 .asocorp-navbar__dropdown-menu {
     position: absolute;
-    top: calc(100% + 17px);
+    top: calc(100% + 20px);
     left: 0;
     min-width: 120px;
     background: rgba(255, 255, 255, 0.993);

@@ -194,25 +194,23 @@ body {
 /* highlight section */
 .asocorp-highlight {
     position: relative;
-    height: 60vh;
-    background-image: url(../Images/hero-bg.jpeg);
+    height: 70vh;
+    background-image: url(../Images/istockphoto-1212891045-612x612.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .image-overlay {
-    position: relative;
-    z-index: 2;
-    background: rgba(0, 38, 80, 0.9); /* dark blue */
-    width: 40%;
-    padding: 3rem;
-    margin-left: 10%;
-    margin-top: 8%;
+    position: absolute;
+    background: rgba(0, 38, 80, 0.8); /* dark blue */
+    width: 50%;
+    /* top: 10%; */
+    right: 5%;
+    padding: 5rem 3rem;
     color: #fff;
     border-radius: 0.25rem;
 }
@@ -229,22 +227,24 @@ body {
 }
 
 .highlight-content h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
     font-weight: normal;
 }
 
 .highlight-content p {
+    font-size: 0.85rem;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .asocorp-btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     background: #007bff;
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: normal;
+    font-size: 0.9rem;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
@@ -254,7 +254,7 @@ body {
 
 /* CTA section */
 .asocorp-cta {
-    background: #020219;
+    background: rgba(0, 38, 80, 0.8);
     padding: 3rem 5%;
     text-align: center;
     color: #fff;
@@ -269,6 +269,7 @@ body {
     font-size: 0.9rem;
     margin-bottom: 1.8rem;
     line-height: 1.6;
+    font-weight: 200;
 }
 
 .asocorp-cta .cta-btns {
@@ -280,9 +281,9 @@ body {
 
 .btn-outline {
     padding: 0.75rem 1.5rem;
-    border: 2px solid #fff;
-    color: #fff;
-    background: transparent;
+    /* border: 2px solid #fff; */
+    color: #1c4d42;
+    background: #fff;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -291,4 +292,79 @@ body {
 .btn-outline:hover {
     background: #fff;
     color: #1c4d42;
+}
+
+/* About section */
+.asocorp-about {
+    padding: 5rem 2.5rem;
+    background-color: #f8f9fa;
+}
+
+.asocorp-about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.asocorp-about__text {
+    flex: 1;
+    max-width: 600px;
+    color: #111;
+}
+.asocorp-about__text h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.96rem;
+    font-weight: normal;
+    color: #007bff;
+    /* background-color: #bddbfb; */
+    border: 2px solid #111;
+    border-radius: 50px;
+    padding:  0.3rem 0.6rem;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    
+}
+.asocorp-about__text h5 span {
+    text-transform: lowercase;
+}
+
+.asocorp-about__text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.asocorp-about__text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.asocorp-about__btn {
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.asocorp-about__image {
+    /* flex: 2; */
+    max-width: 100%;
+    height: auto;
+}
+.asocorp-about__image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.asocorp-about__image img:hover {
+    transform: scale(1.03);
 }
