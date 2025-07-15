@@ -8,6 +8,7 @@
 }
 body {
     font-family: 'Noto Sans', sans-serif;
+    background: #040429;
 }
 
 
@@ -17,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.993);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
 }
 
 .asocorp-navbar__logo {
@@ -113,7 +114,7 @@ body {
 /* About section */
 .asocorp-about {
     padding: 5rem 2.5rem;
-    background-color: #f8f9fa;
+    background-color: #040429;
 }
 
 .asocorp-about__container {
@@ -130,7 +131,7 @@ body {
     height: auto;
 }
 .asocorp-about__image img {
-    width: 500px;
+    width: 400px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -143,6 +144,7 @@ body {
 .asocorp-about__text {
     flex: 2;
     max-width: 600px;
+    color: #fff;
 }
 .asocorp-about__text h5 {
     font-family: 'Montserrat', sans-serif;
@@ -150,7 +152,7 @@ body {
     font-weight: normal;
     color: #007bff;
     /* background-color: #bddbfb; */
-    border: 2px solid #111;
+    border: 2px solid #fff;
     border-radius: 50px;
     padding:  0.3rem 0.6rem;
     width: fit-content;
@@ -262,13 +264,13 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 2rem 4%;
-    background: linear-gradient(to right, #f0f0f0, #e4e4e4);
+    background: #040429;
     flex-wrap: wrap;
 }
 
 .highlight-text {
     /* flex: 1 1 45%; */
-    color: #111;
+    color: #fff;
 }
 
 .highlight-text h2 {
@@ -282,14 +284,14 @@ body {
 .highlight-text p {
     font-size: 0.9rem;
     margin-bottom: 1rem;
-    color: #555;
+    color: #fff;
 }
 
 .highlight-btn {
     display: inline-block;
     padding: 0.5rem 1rem;
     background: transparent;
-    color: #111;
+    color: #fff;
     border: 2px solid #007bff;
     text-decoration: none;
     border-radius: 50px;
