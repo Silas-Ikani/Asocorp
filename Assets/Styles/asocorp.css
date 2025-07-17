@@ -508,7 +508,7 @@ hr {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    padding: 4rem 5%;
+    padding: 6rem 5%;
 }
 
 .asocorp-footer__logo img {
@@ -558,4 +558,19 @@ hr {
 }
 .asocorp-footer__links ul li a:hover {
     color: #2459cd;
+}
+
+.asocorp-footer hr {
+    border: none;
+    width: 80%;
+    height: 1px;
+    background-color: #2459cd;
+    margin: 0 auto;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 0.9rem;
 }
