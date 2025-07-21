@@ -394,8 +394,6 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
     width: 350px;
-    /* height: 100%; */
-    /* padding: 1rem; */
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -536,7 +534,6 @@ hr {
     margin-bottom: 0.5rem;
     font-weight: 600;
     color: #fff;
-    text-decoration: underline;
 }
 
 .asocorp-footer__links ul {

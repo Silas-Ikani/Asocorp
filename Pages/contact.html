@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asocorp | Contact Us</title>
+    <link rel="stylesheet" href="../Assets/Styles/all.css">
+    <link rel="stylesheet" href="../Assets/Styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="asocorp-header">
+        <!-- <div class="asocorp-bg-frame">
+            <img src="./Assets/Images/istockphoto-1212891045-612x612.jpg" alt="">
+        </div> -->
+
+        <nav class="asocorp-navbar">
+            <div class="asocorp-navbar__logo">
+                <a href="../index.html">
+                    <img src="../Assets/Images/Logos/asocorp rebranded.jpg" alt="...">
+                </a>
+            </div>
+            <ul class="asocorp-navbar__nav">
+                <li class="asocorp-navbar__nav-item"><a href="#">Home</a></li>
+                <li class="asocorp-navbar__nav-item asocorp-navbar__dropdown">
+                    <a href="./company.html">Company</a>
+                    <ul class="asocorp-navbar__dropdown-menu">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Corporate Social Responsibility</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </li>
+                <li class="asocorp-navbar__nav-item asocorp-navbar__dropdown">
+                    <a href="insights.html">Insights & Innovations</a>
+                    <ul class="asocorp-navbar__dropdown-menu">
+                    </li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">Innovate With Asocorp</a></li>
+                        <li><a href="#">Collaborations & Opportunities</a></li>
+                    </ul>
+                <li class="asocorp-navbar__nav-item"><a href="./contact.html">Contact Us</a></li>
+                <li class="asocorp-navbar__nav-item"><a href="#"><i class="fas fa-globe nav-icon"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero section -->
+        <section class="asocorp-contact-hero">
+            <div class="hero-content">
+                <h1>Contact us!</h1>
+                <p>If you have any questions about our products or services, or would like to speak to a asocorp specialist, we’re here to help.</p>
+            </div>
+            <div class="hero-socials">
+                <a href="#" class="icon-container"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon-container"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="icon-container"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="icon-container"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon-container"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Cards scetion -->
+     <section class="contact-cards">
+        <div class="card">
+            <h3>Buy Online</h3>
+            <p>Explore our products and make purchases directly from our online store. and optional services like simple IT management.</p>
+            <hr>
+            <a href="#" class="card-btn">Shop Now <i class="fas fa-caret-right"></i></a>
+        </div>
+        <div class="card">
+            <h3>Contact Sales</h3>
+            <p>Connect with our sales team to discuss your business needs, get personalized solutions, and explore partnership opportunities.</p>
+            <hr>
+            <a href="#" class="card-btn">Contact Sales <i class="fas fa-caret-right"></i></a>
+        </div>
+        <div class="card">
+            <h3>Contact Support</h3>
+            <p>Need assistance? Our support team is here to help you with any issues or questions you may have about our products or services.</p>
+            <hr>
+            <a href="#" class="card-btn">Get Support <i class="fas fa-caret-right"></i></a>
+        </div>
+     </section>
+
+    <!-- Contact Form -->
+    <section class="asocorp-contact-form">
+        <div class="form-container">
+            <h2>Let's talk!</h2>
+            <p>Send us your message and have a rep contact you.</p>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone no.</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" id="jobTitle" name="jobTitle" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Country/Region</label>
+                        <select name="country" id="country">
+                            <option value="">Please select</option>
+                            <option value="NIG">Nigeria</option>
+                            <option value="USA">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="CA">Canada</option>
+                            <option value="AU">Australia</option>
+                            <option value="IN">India</option>
+                            <!-- Add more countries as needed -->
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="8" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Footer section -->
+    <footer class="asocorp-footer">
+        <div class="asocorp-footer__container">
+            <div class="asocorp-footer__logo">
+                <img src="../Assets/Images/Logos/asocorp logo.png" alt="Asocorp Logo">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="asocorp-footer__links">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">CSR</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="asocorp-footer__links">
+                <h5>Insights & Innovations</h5>
+                <ul>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Innovate with Asocorp</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="asocorp-footer__links">
+                <h5>More</h5>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Customer Loyalty</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy; 2025 asocorp. All rights reserved.</p>
+    </footer>
+    
+
+
+    
+</body>
+</html>

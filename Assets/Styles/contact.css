@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: #fff transparent;
+    scrollbar-width: thin;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #111;
+    background-color: #f9f9f9;
+}
+
+.asocorp-header {
+    background-image: url(../Images/istockphoto-1212891045-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+}
+
+/* Navbar */
+.asocorp-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.993);
+    padding: 0.3rem 3rem;
+    padding-left: 5rem;
+}
+
+.asocorp-navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.asocorp-navbar__logo img {
+    width: 150px;
+}
+
+.asocorp-navbar__nav {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.asocorp-navbar__nav  .asocorp-navbar__menu-item{
+    position: relative;
+}
+
+.asocorp-navbar__nav-item a {
+    text-decoration: none;
+    color: #111;
+    font-size: 0.92rem;
+    font-weight: normal;
+    padding: 0.7rem;
+    display: inline-block;
+    transition: 0.2s ease;
+}
+.asocorp-navbar__nav-item a:hover {
+    color: #2459cd;
+}
+
+.asocorp-navbar__nav-item .nav-icon {
+    font-size: 1.4rem;
+}
+
+/* Dropdown menu */
+.asocorp-navbar__dropdown {
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.asocorp-navbar__dropdown-menu {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    min-width: 120px;
+    background: rgba(255, 255, 255, 0.993);
+    border-top: 2px solid #2459cd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.2s ease;
+    z-index: 99;
+}
+
+.asocorp-navbar__dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    pointer-events: auto;
+    z-index: 98;
+}
+
+.asocorp-navbar__dropdown:hover .asocorp-navbar__dropdown-menu {
+    opacity: 1;
+    transform: translateY(2px);
+    pointer-events: auto;
+}
+
+.asocorp-navbar__dropdown .asocorp-navbar__dropdown-menu {
+    list-style: none;
+}
+
+.asocorp-navbar__dropdown-menu li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: #111;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.asocorp-navbar__dropdown-menu li a:hover {
+    color: #2459cd;
+}
+
+
+/* Hero section */
+.asocorp-contact-hero {
+    padding: 6rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.asocorp-contact-hero .hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    /* font-family: 'Noto sans', sans-serif; */
+    font-size: 3.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.asocorp-contact-hero .hero-socials {
+    display: flex;
+    gap: 1rem;
+    align-items: last end;
+    justify-content: start;
+}
+
+.asocorp-contact-hero .icon-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: all 0.2s ease;
+}
+
+
+/* Contact Cards */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 4rem 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.3s ease;
+}
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #2459cd;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.card p {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.card hr {
+    border-top: 1px solid #b2b2b2;
+    margin: 1rem 0;
+}
+
+.card a {
+    color: #2459cd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Contact form */
+.asocorp-contact-form {
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.form-container h2 {
+    color: #111;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-container p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.form-group.full {
+    flex: 100%;
+}
+
+.form-group label {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+input, 
+select,
+textarea {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: 2px solid #bfbfbf;
+    border-radius: 6px;
+    color: #333;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2459cd;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form button {
+    background-color: #2459cd;
+    color: #fff;
+    /* width: 200px; */
+    /* margin: 0 auto; */
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+/* Footer */
+.asocorp-footer {
+    background-color: #040429;
+}
+
+.asocorp-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 5%;
+}
+
+.asocorp-footer__logo img {
+    width: 200px;
+    margin: 0;
+}
+
+.asocorp-footer__logo .social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+.asocorp-footer__logo .social-links a {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__logo .social-links a:hover {
+    color: #2459cd;
+}
+
+
+.asocorp-footer__links h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.asocorp-footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.asocorp-footer__links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-footer__links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__links ul li a:hover {
+    color: #2459cd;
+}
+
+.asocorp-footer hr {
+    border: none;
+    width: 80%;
+    height: 1px;
+    background-color: #2459cd;
+    margin: 0 auto;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 0.9rem;
+}
