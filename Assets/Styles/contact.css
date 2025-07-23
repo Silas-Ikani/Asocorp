@@ -14,12 +14,15 @@ body {
 }
 
 .asocorp-header {
-    background-image: url(../Images/istockphoto-1212891045-612x612.jpg);
+    background-image: url(../Images/Backgrounds/learning-development-2025-bg.jpg);
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     position: relative;
     height: 70vh;
+
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Navbar */
@@ -350,7 +353,7 @@ textarea {
 
 
 .asocorp-footer__links h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
     color: #fff;
