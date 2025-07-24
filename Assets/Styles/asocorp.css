@@ -3,20 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scrollbar-color: #fff transparent;
+    /* scrollbar-color: #fff transparent; */
     scrollbar-width: thin;
 }
 
 body {
     font-family: 'Noto Sans', sans-serif;
     color: #fff;
-    background-color: #040429;
+    background-color: rgb(4, 4, 41);
 }
 
 .asocorp-header {
-    background-image: url(../Images/istockphoto-1212891045-612x612.jpg);
+    background-image: url(../Images/Backgrounds/digital-banking-platform.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
@@ -27,10 +27,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: rgba(101, 101, 101, 0.1); */
-    background: rgba(255, 255, 255, 0.993);
+    background: rgba(101, 101, 101, 0.7);
+    /* background: rgba(255, 255, 255, 0.993); */
     padding: 0.3rem 3rem;
     padding-left: 5rem;
+
+    /* position: fixed;
+    top: 0; */
 }
 
 .asocorp-navbar__logo {
@@ -54,15 +57,15 @@ body {
 
 .asocorp-navbar__nav-item a {
     text-decoration: none;
-    color: #111;
+    color: #fff;
     font-size: 0.92rem;
-    font-weight: normal;
+    font-weight: 600;
     padding: 0.7rem;
     display: inline-block;
     transition: 0.2s ease;
 }
 .asocorp-navbar__nav-item a:hover {
-    color: #2459cd;
+    color: #111;
 }
 
 .asocorp-navbar__nav-item .nav-icon {
@@ -87,7 +90,7 @@ body {
     left: 0;
     min-width: 120px;
     background: rgba(255, 255, 255, 0.993);
-    border-top: 2px solid #2459cd;
+    border-top: 2px solid #007bff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(-10px);
@@ -141,7 +144,7 @@ body {
     flex-direction: column;
     padding-top: 8rem;
     padding-left: 2rem;
-    color: #fff;
+    color: #111;
 }
 
 .asocorp-hero h1 {
@@ -215,14 +218,14 @@ body {
         text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 5rem;
+        padding-top: 6rem;
     }
     .asocorp-hero h1 {
         font-size: 2rem;
         margin-bottom: 0.5rem;
     }
     .asocorp-hero p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         margin-bottom: 0.5rem;
     }
     .asocorp-hero__btn {
@@ -236,6 +239,11 @@ body {
 
 /* Section 2 */
 .asocorp-section2 {
+    background-image: url(../Images/Backgrounds/blue-background-design-free-vector.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgb(4, 4, 41);
     padding: 4rem 2rem;
     color: #fff;
     display: flex;
@@ -282,11 +290,11 @@ body {
     height: 70vh;
     background-image: url(../Images/Backgrounds/2022-08-19-youth-innovation-african-cities.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 30% center;
     background-repeat: no-repeat;
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.7);
-
+    
     display: flex;
     align-items: center;
 }
@@ -294,8 +302,8 @@ body {
 .image-overlay {
     position: absolute;
     background: rgb(4, 4, 41);
-    width: 50%;
-    right: 5%;
+    width: 45%;
+    right: 4%;
     padding: 5rem 3rem;
     color: #fff;
     border-radius: 0.25rem;
@@ -370,12 +378,15 @@ body {
 
 /* CTA section */
 .asocorp-cta {
-    background-image: url(../Images/Backgrounds/istockphoto-1219872152-612x612.jpg);
+    background-image: url(../Images/Backgrounds/abstract-background-dark-blue-with-modern-concept-vector.jpg);
     background-position: center;
     background-size: cover;
     padding: 3rem 5%;
     text-align: center;
     color: #fff;
+    
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .asocorp-cta h3 {
@@ -429,8 +440,9 @@ body {
 
 /* About section */
 .asocorp-about {
+    background-image: url(../Images/Backgrounds/photo-1614850523011-8f49ffc73908.jfif);
     padding: 5rem 2.5rem;
-    background-color: #040429;
+    /* background-color: #040429; */
 }
 
 .asocorp-about__container {
@@ -535,6 +547,12 @@ body {
 
 /* Blog section */
 .asocorp-blog {
+    background-image: url(../Images/Backgrounds/blue-background-design-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgb(4, 4, 41);
     padding: 5rem 2.5rem;
 }
 .asocorp-blog h2 {
