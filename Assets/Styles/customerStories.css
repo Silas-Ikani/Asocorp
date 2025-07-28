@@ -151,3 +151,273 @@ p {
     color: #fff;
     margin-bottom: 2rem;
 }
+
+
+/* Customer Stories Section */
+.asocorp-customer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+}
+
+.asocorp-customer-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.asocorp-customer-cards .card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    background: rgba(0, 0, 0, 0.387);
+    width: 100%;
+    height: 120px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.asocorp-customer-cards .card img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+.asocorp-customer-cards .card-body {
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+ .card .card-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #111;
+    font-weight: 400;
+}
+
+ .card .card-body p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+ .card .card-body .card-btn {
+    display: inline-block;
+    text-align: center;
+    
+    padding: 0.5rem 1rem;
+    background: #2459cd;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.asocorp-customer-cards .card-btn:hover {
+    background: #005ec0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .asocorp-customer-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .asocorp-customer-cards .card {
+        width: 90%;
+    }
+}
+
+
+
+/* CTA section */
+.asocorp-cta {
+    background-image: url(../Images/Backgrounds/DeWatermark.ai_1753207225671.jpg);
+    background-position: center 80%;
+    background-size: cover;
+    padding: 3rem 5%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    background-blend-mode: overlay;
+    background-color: rgba(4, 4, 41, 0.870);
+}
+
+.asocorp-cta .cta-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.cta-text h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-cta p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.asocorp-cta .cta-btn {
+    text-align: left;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cta-btn .btn-cta {
+    padding: 0.5rem 1rem;
+    /* border: 2px solid #fff; */
+    color: #fff;
+    background: #2459cd;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .asocorp-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .asocorp-cta .cta-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .asocorp-cta h3 {
+        font-size: 1.6rem;
+    }
+    .asocorp-cta p {
+        font-size: 0.85rem;
+    }
+    .btn-outline {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+}
+
+
+/* Footer */
+.asocorp-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 5%;
+    border-top: 1px solid #2459cd;
+}
+
+.asocorp-footer__logo img {
+    width: 200px;
+    margin: 0;
+}
+
+.asocorp-footer__logo .social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+.asocorp-footer__logo .social-links a {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__logo .social-links a:hover {
+    color: #2459cd;
+}
+
+
+.asocorp-footer__links h5 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.asocorp-footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.asocorp-footer__links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-footer__links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__links ul li a:hover {
+    color: #2459cd;
+}
+
+/* .asocorp-footer hr {
+    border: none;
+    width: 80%;
+    height: 1px;
+    background-color: #2459cd;
+    margin: 0 auto;
+} */
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .asocorp-footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .asocorp-footer__logo img {
+        width: 150px;
+    }
+    .asocorp-footer__links h5 {
+        font-size: 1rem;
+    }
+    .asocorp-footer__links ul li a {
+        font-size: 0.85rem;
+    }
+    .asocorp-footer hr {
+        width: 100%;
+    }
+    .copyright {
+        font-size: 0.8rem;
+        padding: 1rem 1rem;
+    }
+}
