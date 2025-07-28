@@ -57,13 +57,10 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 0.92rem;
-    font-weight: 600;
+    font-weight: normal;
     padding: 0.7rem;
     display: inline-block;
     transition: 0.2s ease;
-}
-.asocorp-navbar__nav-item a:hover {
-    color: #111;
 }
 
 .asocorp-navbar__nav-item .nav-icon {
@@ -87,6 +84,8 @@ body {
     top: calc(100% + 20px);
     left: 0;
     min-width: 120px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background: rgba(255, 255, 255, 0.993);
     border-top: 2px solid #007bff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -121,6 +120,7 @@ body {
 
 .asocorp-navbar__dropdown-menu li a {
     padding: 0.5rem 1rem;
+    font-weight: normal;
     display: block;
     color: #111;
     white-space: nowrap;

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #111;
+    background-color: #040429;
+}
+
+.asocorp-header {
+    background-image: url(../Images/Backgrounds/InsightsBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar */
+.asocorp-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(101, 101, 101, 0.7);
+    padding: 0.3rem 3rem;
+    padding-left: 5rem;
+}
+
+.asocorp-navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.asocorp-navbar__logo img {
+    width: 150px;
+}
+
+.asocorp-navbar__nav {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.asocorp-navbar__nav  .asocorp-navbar__menu-item{
+    position: relative;
+}
+
+.asocorp-navbar__nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: normal;
+    padding: 0.7rem;
+    display: inline-block;
+    transition: 0.2s ease;
+}
+
+.asocorp-navbar__nav-item .nav-icon {
+    font-size: 1.4rem;
+}
+
+/* Dropdown menu */
+.asocorp-navbar__dropdown {
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.asocorp-navbar__dropdown-menu {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    min-width: 120px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.993);
+    border-top: 2px solid #2459cd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.2s ease;
+    z-index: 99;
+}
+
+.asocorp-navbar__dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    pointer-events: auto;
+    z-index: 98;
+}
+
+.asocorp-navbar__dropdown:hover .asocorp-navbar__dropdown-menu {
+    opacity: 1;
+    transform: translateY(2px);
+    pointer-events: auto;
+}
+
+.asocorp-navbar__dropdown .asocorp-navbar__dropdown-menu {
+    list-style: none;
+}
+
+.asocorp-navbar__dropdown-menu li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: #111;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.asocorp-navbar__dropdown-menu li a:hover {
+    color: #2459cd;
+}
+
+
+ /* Hero section */
+.asocorp-insights-hero {
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.asocorp-insights-hero h1 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.asocorp-insights-hero p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 2rem;
+}

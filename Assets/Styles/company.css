@@ -3,22 +3,35 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scrollbar-color: #000 transparent;
     scrollbar-width: thin;
 }
+
 body {
     font-family: 'Noto Sans', sans-serif;
-    background: #040429;
+    color: #111;
+    background-color: #040429;
 }
 
+.asocorp-header {
+    background-image: url(../Images/Backgrounds/uk-black-tech-VD3Gizi8cbU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 /* Navbar */
 .asocorp-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.993);
-    padding: 0.5rem 3rem;
+    background: rgba(101, 101, 101, 0.7);
+    padding: 0.3rem 3rem;
+    padding-left: 5rem;
 }
 
 .asocorp-navbar__logo {
@@ -27,7 +40,7 @@ body {
 }
 
 .asocorp-navbar__logo img {
-    width: 135px;
+    width: 150px;
 }
 
 .asocorp-navbar__nav {
@@ -42,15 +55,12 @@ body {
 
 .asocorp-navbar__nav-item a {
     text-decoration: none;
-    color: #111;
+    color: #fff;
     font-size: 0.92rem;
     font-weight: normal;
     padding: 0.7rem;
     display: inline-block;
     transition: 0.2s ease;
-}
-.asocorp-navbar__nav-item a:hover {
-    color: #007bff;
 }
 
 .asocorp-navbar__nav-item .nav-icon {
@@ -68,8 +78,10 @@ body {
     top: calc(100% + 20px);
     left: 0;
     min-width: 120px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background: rgba(255, 255, 255, 0.993);
-    border-top: 2px solid #007bff;
+    border-top: 2px solid #2459cd;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(-10px);
@@ -108,7 +120,36 @@ body {
     text-decoration: none;
 }
 .asocorp-navbar__dropdown-menu li a:hover {
-    color: #007bff;
+    color: #2459cd;
+}
+
+
+ /* Hero section */
+.asocorp-hero {
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.asocorp-hero h1 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.asocorp-hero p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 2rem;
 }
 
 /* About section */
@@ -187,76 +228,6 @@ body {
 }
 
 
-/* Split section */
-.asocorp-split {
-    display: flex;
-    width: 100%;
-    min-height: 300px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.feature {
-    flex: 1;
-    padding: 2.5rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.feature h3 {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.feature h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 0.5rem 0;
-    font-weight: 800;
-}
-
-.feature p {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    line-height: 1.5;
-}   
-
-.feature a {
-    background: #fff;
-    color: #007bff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 545;
-    display: inline-block;
-    margin-top: 0.5rem;
-    text-align: center;
-}
-
-.feature-apps {
-    background: url(../Images/istockphoto-1212891045-612x612.jpg) no-repeat center center;
-    background-size: cover;
-    text-align: right;
-    align-items: end;
-    padding-right: 4rem;
-
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.feature-infrastructure {
-    background: url(../Images/hero-bg.jpeg) no-repeat center center;
-    background-size: cover;
-    text-align: left;
-    align-items: start;
-    padding-left: 4rem;
-
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-
 
 /* Highlights section */
 .asocorp-highlight {
@@ -312,4 +283,184 @@ body {
     max-width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+
+
+/* CTA section */
+.asocorp-cta {
+    background-image: url(../Images/Backgrounds/DeWatermark.ai_1753207225671.jpg);
+    background-position: center 80%;
+    background-size: cover;
+    padding: 3rem 5%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    background-blend-mode: overlay;
+    background-color: rgba(4, 4, 41, 0.870);
+}
+
+.asocorp-cta .cta-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.cta-text h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-cta p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.asocorp-cta .cta-btn {
+    text-align: left;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cta-btn .btn-cta {
+    padding: 0.5rem 1rem;
+    /* border: 2px solid #fff; */
+    color: #fff;
+    background: #2459cd;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .asocorp-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .asocorp-cta .cta-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .asocorp-cta h3 {
+        font-size: 1.6rem;
+    }
+    .asocorp-cta p {
+        font-size: 0.85rem;
+    }
+    .btn-outline {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+}
+
+
+
+
+/* Footer */
+.asocorp-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 5%;
+    border-top: 1px solid #2459cd;
+}
+
+.asocorp-footer__logo img {
+    width: 200px;
+    margin: 0;
+}
+
+.asocorp-footer__logo .social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+.asocorp-footer__logo .social-links a {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__logo .social-links a:hover {
+    color: #2459cd;
+}
+
+
+.asocorp-footer__links h5 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.asocorp-footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.asocorp-footer__links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-footer__links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__links ul li a:hover {
+    color: #2459cd;
+}
+
+/* .asocorp-footer hr {
+    border: none;
+    width: 80%;
+    height: 1px;
+    background-color: #2459cd;
+    margin: 0 auto;
+} */
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .asocorp-footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .asocorp-footer__logo img {
+        width: 150px;
+    }
+    .asocorp-footer__links h5 {
+        font-size: 1rem;
+    }
+    .asocorp-footer__links ul li a {
+        font-size: 0.85rem;
+    }
+    .asocorp-footer hr {
+        width: 100%;
+    }
+    .copyright {
+        font-size: 0.8rem;
+        padding: 1rem 1rem;
+    }
 }

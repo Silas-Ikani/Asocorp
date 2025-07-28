@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #111;
+    background-color: #040429;
+}
+
+.asocorp-header {
+    background-image: url(../Images/Backgrounds/uk-black-tech-VD3Gizi8cbU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar */
+.asocorp-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(101, 101, 101, 0.7);
+    padding: 0.3rem 3rem;
+    padding-left: 5rem;
+}
+
+.asocorp-navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.asocorp-navbar__logo img {
+    width: 150px;
+}
+
+.asocorp-navbar__nav {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.asocorp-navbar__nav  .asocorp-navbar__menu-item{
+    position: relative;
+}
+
+.asocorp-navbar__nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: normal;
+    padding: 0.7rem;
+    display: inline-block;
+    transition: 0.2s ease;
+}
+
+.asocorp-navbar__nav-item .nav-icon {
+    font-size: 1.4rem;
+}
+
+/* Dropdown menu */
+.asocorp-navbar__dropdown {
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.asocorp-navbar__dropdown-menu {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    min-width: 120px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.993);
+    border-top: 2px solid #2459cd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.2s ease;
+    z-index: 99;
+}
+
+.asocorp-navbar__dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    pointer-events: auto;
+    z-index: 98;
+}
+
+.asocorp-navbar__dropdown:hover .asocorp-navbar__dropdown-menu {
+    opacity: 1;
+    transform: translateY(2px);
+    pointer-events: auto;
+}
+
+.asocorp-navbar__dropdown .asocorp-navbar__dropdown-menu {
+    list-style: none;
+}
+
+.asocorp-navbar__dropdown-menu li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: #111;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.asocorp-navbar__dropdown-menu li a:hover {
+    color: #2459cd;
+}
+
+
+ /* Hero section */
+.asocorp-hero {
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.asocorp-hero h1 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.asocorp-hero p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/* Split section */
+.asocorp-split {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feature {
+    flex: 1;
+    padding: 2.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.feature h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem 0;
+    font-weight: 800;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}   
+
+.feature a {
+    background: #fff;
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 545;
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.feature-apps {
+    background: url(../Images/istockphoto-1212891045-612x612.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: right;
+    align-items: end;
+    padding-right: 4rem;
+
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.feature-infrastructure {
+    background: url(../Images/hero-bg.jpeg) no-repeat center center;
+    background-size: cover;
+    text-align: left;
+    align-items: start;
+    padding-left: 4rem;
+
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+}
