@@ -70,6 +70,12 @@ body {
     font-size: 1.4rem;
 }
 
+.asocorp-navbar .mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
 /* Dropdown menu */
 .asocorp-navbar__dropdown {
     transition: 0.2s ease;
