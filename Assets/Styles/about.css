@@ -10,6 +10,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     color: #111;
     background-color: #040429;
+    /* overflow: hidden; */
 }
 
 .asocorp-header {
@@ -154,7 +155,7 @@ body {
 /* About section */
 .asocorp-about {
     padding: 5rem 2.5rem;
-    background-color: #040429;
+    background-color: #f9f9f9;
 }
 
 .asocorp-about__container {
@@ -184,7 +185,7 @@ body {
 .asocorp-about__text {
     flex: 2;
     max-width: 600px;
-    color: #fff;
+    color: #111;
 }
 .asocorp-about__text h5 {
     font-family: 'Montserrat', sans-serif;
