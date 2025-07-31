@@ -380,6 +380,56 @@ p {
 }
 
 
+/* Progress section */
+.asocorp-progress {
+    padding: 5rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.asocorp-progress .section-heading {
+    font-size: 2.2rem;
+    font-family: 'montserrat', sans-serif;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.progress-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.progress-img img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    flex: 1 1 450px;
+}
+
+.progress-text {
+    max-width: 550px;
+}
+
+.progress-text .progress-box {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+    padding: 1rem 2rem;
+}
+
+.progress-box p {
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
+
+
 
 /* Split section */
 .asocorp-split {
