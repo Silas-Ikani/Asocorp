@@ -125,7 +125,7 @@ body {
 
 
  /* Hero section */
-.asocorp-insights-hero {
+.asocorp-hero {
     padding: 6rem 2rem;
     display: flex;
     flex-direction: column;
@@ -133,21 +133,418 @@ body {
     align-items: start;
 }
 
-.asocorp-insights-hero h1 {
+.asocorp-hero h1 {
     font-size: 2.8rem;
     font-weight: normal;
     margin-bottom: 0.5rem;
     color: #fff;
 }
-.asocorp-insights-hero p {
+.asocorp-hero p {
     font-size: 0.9rem;
     font-weight: 400;
     color: #fff;
 }
 
-p {
-    font-size: 1rem;
-    font-weight: 400;
+
+/* Metrics section */
+.asocorp-metrics {
+    padding: 5rem 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: #f9f9f9;
+    color: #111;
+}
+
+.metrics-heading h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.metrics-heading p {
+    color: #111;
+    font-size: 0.9rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+}
+
+.metrics-subheading h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+}
+
+.metrics-subheading p {
+    color: #111;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.metrics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.metric-card {
+    width: 250px;
+    background: transparent;
+    padding: 1rem;
+}
+
+.metric-card .icon-container {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #2459cd;
+    color: #2459cd;
+}
+
+.metric-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+    color: #2459cd;
+}
+
+.metric-card p {
+    color: #111;
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .metrics-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* Inclusion section */
+.asocorp-inclusion {
+    background-image: url(../Images/Backgrounds/istockphoto-1169356297-612x612.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 2rem;
     color: #fff;
+
+    background-blend-mode: overlay;
+    background-color: rgba(4, 4, 41, 0.664);
+}
+
+.inclusion-content {
+    max-width: 650px;
+    margin-right: auto;
+    padding-left: 4rem;
+}
+
+.inclusion-content i {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0.5;
+}
+
+.inclusion-content h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.inclusion-content p {
+    font-size: 0.9rem;
+    font-weight: 300;
     margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.inclusion-box {
+    background: #040429;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.inclusion-box h2 {
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.inclusion-box p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.inclusion-link {
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 1rem;
+    padding-bottom: 0.1rem;
+    transition: border-color 0.3s ease;
+}
+.inclusion-link:hover {
+    border-color: #2459cd;
+}
+
+
+
+/* Resource section */
+.asocorp-resources {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: #f9f9f9;
+    color: #111;
+}
+
+.asocorp-resources h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.resources-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.resource-card {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    transition: transform 0.2s ease;
+}
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-card h5 {
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #2459cd;
+}
+
+.resource-card h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.resource-card p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.resource-card a {
+    display: inline-block;
+    margin-top: auto;
+    color: #2459cd;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+
+/* CTA section */
+.asocorp-cta {
+    background-image: url(../Images/Backgrounds/DeWatermark.ai_1753207225671.jpg);
+    background-position: center 80%;
+    background-size: cover;
+    padding: 3rem 5%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    background-blend-mode: overlay;
+    background-color: rgba(4, 4, 41, 0.870);
+}
+
+.asocorp-cta .cta-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.cta-text h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-cta p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.asocorp-cta .cta-btn {
+    text-align: left;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cta-btn .btn-cta {
+    padding: 0.5rem 1rem;
+    /* border: 2px solid #fff; */
+    color: #fff;
+    background: #2459cd;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .asocorp-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .asocorp-cta .cta-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .asocorp-cta h3 {
+        font-size: 1.6rem;
+    }
+    .asocorp-cta p {
+        font-size: 0.85rem;
+    }
+    .btn-outline {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+}
+
+
+/* Footer */
+.asocorp-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 5%;
+    border-top: 1px solid #2459cd;
+}
+
+.asocorp-footer__logo img {
+    width: 200px;
+    margin: 0;
+}
+
+.asocorp-footer__logo .social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+.asocorp-footer__logo .social-links a {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__logo .social-links a:hover {
+    color: #2459cd;
+}
+
+
+.asocorp-footer__links h5 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.asocorp-footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.asocorp-footer__links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-footer__links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__links ul li a:hover {
+    color: #2459cd;
+}
+
+/* .asocorp-footer hr {
+    border: none;
+    width: 80%;
+    height: 1px;
+    background-color: #2459cd;
+    margin: 0 auto;
+} */
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .asocorp-footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .asocorp-footer__logo img {
+        width: 150px;
+    }
+    .asocorp-footer__links h5 {
+        font-size: 1rem;
+    }
+    .asocorp-footer__links ul li a {
+        font-size: 0.85rem;
+    }
+    .asocorp-footer hr {
+        width: 100%;
+    }
+    .copyright {
+        font-size: 0.8rem;
+        padding: 1rem 1rem;
+    }
 }

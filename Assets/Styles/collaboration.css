@@ -13,15 +13,15 @@ body {
 }
 
 .asocorp-header {
-    background-image: url(../Images/Backgrounds/istockphoto-2152910280-612x612.jpg);
+    background-image: url(../Images/Backgrounds/collaborations&affiliates.jpg);
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     height: 70vh;
 
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Navbar */
@@ -145,169 +145,7 @@ body {
     color: #fff;
 }
 
-p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 2rem;
-}
 
-
-
-
-/* Progress section */
-.asocorp-progress {
-    padding: 5rem 2rem;
-    background-color: #f9f9f9;
-}
-
-.asocorp-progress .section-heading {
-    font-size: 2.2rem;
-    font-family: 'montserrat', sans-serif;
-    margin-bottom: 2.5rem;
-    text-align: center;
-}
-
-.progress-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.progress-img img {
-    width: 600px;
-    height: auto;
-    object-fit: cover;
-    flex: 1 1 550px;
-}
-
-.progress-text {
-    max-width: 550px;
-}
-
-.progress-text .progress-box {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: start;
-    padding: 1rem 2rem;
-}
-
-.progress-box .circular-bar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: conic-gradient(#2459cd 0% 92%, #d0dfff 92% 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 1rem;
-}
-.circular-bar.sixty-one {
-    background: conic-gradient(#2459cd 0% 61%, #d0dfff 61% 100%);
-}
-
-.circular-bar .inner-circle {
-    width: 98px;
-    height: 98px;
-    border-radius: 50%;
-    background: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.circular-bar .percent {
-    font-size: 1.8rem;
-    font-weight: 700;
-    /* color: #2459cd; */
-    z-index: 1;
-    position: absolute;
-}
-
-.progress-box p {
-    color: #555;
-    font-size: 0.9rem;
-    font-weight: 400;
-}
-
-
-
-
-
-/* Split section */
-.asocorp-split {
-    display: flex;
-    width: 100%;
-    min-height: 300px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.feature {
-    flex: 1;
-    padding: 2.5rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.feature h3 {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.feature h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 0.5rem 0;
-    font-weight: 800;
-}
-
-.feature p {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    line-height: 1.5;
-}   
-
-.feature a {
-    background: #fff;
-    color: #007bff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 545;
-    display: inline-block;
-    margin-top: 0.5rem;
-    text-align: center;
-}
-
-.feature-apps {
-    background: url(../Images/istockphoto-1212891045-612x612.jpg) no-repeat center center;
-    background-size: cover;
-    text-align: right;
-    align-items: end;
-    padding-right: 4rem;
-
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.feature-infrastructure {
-    background: url(../Images/hero-bg.jpeg) no-repeat center center;
-    background-size: cover;
-    text-align: left;
-    align-items: start;
-    padding-left: 4rem;
-
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
 /* CTA section */
 .asocorp-cta {
