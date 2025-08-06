@@ -206,6 +206,125 @@ body {
 }
 
 
+/* LAtest Jobs Section */
+.asocorp-jobs {
+    padding: 4rem 8rem;
+    background: #fff;
+}
+
+.asocorp-jobs h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2459cd;
+    margin-bottom: 1.5rem;
+}
+
+.jobs-container {
+    padding: 2rem 0.5rem;
+}
+
+.jobs-container .job {
+    margin-bottom: 1.5rem;
+}
+
+.jobs-container .job h3 {
+    font-weight: 500;
+    color: #2459cd;
+    margin-bottom: 0.5rem;
+}
+
+.jobs-container .job p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.jobs-container a {
+    text-decoration: none;
+    color: #2459cd;
+    font-size: 0.9rem;
+}
+
+.job-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-btn .asocorp-btn {
+    display: inline-flex;
+    background-color: #2459cd;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* Connect Cta */
+.asocorp-connect {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.connect-box {
+    flex: 1 1 45%;
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    padding: 2rem;
+}
+
+.connect-box img {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    height: 80%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.connect-text {
+    margin-left: auto;
+    z-index: 2;
+    max-width: 60%;
+    text-align: left;
+}
+
+.connect-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+}
+
+.insider {
+    background: linear-gradient(to right, #040429, #2459cd);
+    text-decoration: none;
+}
+
+.social {
+    background: linear-gradient(to left, #040429, #2459cd);
+}
+
+
+
+
 /* CTA section */
 .asocorp-cta {
     background-image: url(../Images/Backgrounds/DeWatermark.ai_1753207225671.jpg);
