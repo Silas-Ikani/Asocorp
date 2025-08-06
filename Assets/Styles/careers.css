@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #111;
+    background-color: #040429;
+}
+
+.asocorp-header {
+    background-image: url(../Images/Backgrounds/carresBg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 70vh;
+
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar */
+.asocorp-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(101, 101, 101, 0.7);
+    padding: 0.3rem 3rem;
+    padding-left: 5rem;
+}
+
+.asocorp-navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.asocorp-navbar__logo img {
+    width: 150px;
+}
+
+.asocorp-navbar__nav {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.asocorp-navbar__nav  .asocorp-navbar__menu-item{
+    position: relative;
+}
+
+.asocorp-navbar__nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.92rem;
+    font-weight: normal;
+    padding: 0.7rem;
+    display: inline-block;
+    transition: 0.2s ease;
+}
+
+.asocorp-navbar__nav-item .nav-icon {
+    font-size: 1.4rem;
+}
+
+/* Dropdown menu */
+.asocorp-navbar__dropdown {
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.asocorp-navbar__dropdown-menu {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    min-width: 120px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: rgba(255, 255, 255, 0.993);
+    border-top: 2px solid #2459cd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: 0.2s ease;
+    z-index: 99;
+}
+
+.asocorp-navbar__dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: transparent;
+    pointer-events: auto;
+    z-index: 98;
+}
+
+.asocorp-navbar__dropdown:hover .asocorp-navbar__dropdown-menu {
+    opacity: 1;
+    transform: translateY(2px);
+    pointer-events: auto;
+}
+
+.asocorp-navbar__dropdown .asocorp-navbar__dropdown-menu {
+    list-style: none;
+}
+
+.asocorp-navbar__dropdown-menu li a {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: #111;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.asocorp-navbar__dropdown-menu li a:hover {
+    color: #2459cd;
+}
+
+
+ /* Hero section */
+.asocorp-hero {
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.asocorp-hero h1 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.asocorp-hero p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/* Career About Scetion */
+.asocorp-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5em 2rem;
+    gap: 1.5rem;
+    background-color: #fafafa;
+}
+
+.about-text {
+    flex: 1 1 45%;
+    color: #222;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #040429;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    color: #333;
+}
+
+.about-video {
+    flex: 1 1 45%;
+}
+
+.about-video video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .career-about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .career-text, .career-video {
+        flex: 1 1 100%;
+    }
+
+    .career-text h2 {
+        font-size: 2rem;
+    }
+
+    .career-text p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* CTA section */
+.asocorp-cta {
+    background-image: url(../Images/Backgrounds/DeWatermark.ai_1753207225671.jpg);
+    background-position: center 80%;
+    background-size: cover;
+    padding: 3rem 5%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    background-blend-mode: overlay;
+    background-color: rgba(4, 4, 41, 0.870);
+}
+
+.asocorp-cta .cta-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.cta-text h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-cta p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.asocorp-cta .cta-btn {
+    text-align: left;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cta-btn .btn-cta {
+    padding: 0.5rem 1rem;
+    /* border: 2px solid #fff; */
+    color: #fff;
+    background: #2459cd;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .asocorp-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .asocorp-cta .cta-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .asocorp-cta h3 {
+        font-size: 1.6rem;
+    }
+    .asocorp-cta p {
+        font-size: 0.85rem;
+    }
+    .btn-outline {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+}
+
+
+/* Footer */
+.asocorp-footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 5%;
+    border-top: 1px solid #2459cd;
+}
+
+.asocorp-footer__logo img {
+    width: 200px;
+    margin: 0;
+}
+
+.asocorp-footer__logo .social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+.asocorp-footer__logo .social-links a {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__logo .social-links a:hover {
+    color: #2459cd;
+}
+
+
+.asocorp-footer__links h5 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.asocorp-footer__links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.asocorp-footer__links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.asocorp-footer__links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+.asocorp-footer__links ul li a:hover {
+    color: #2459cd;
+}
+
+/* .asocorp-footer hr {
+    border: none;
+    width: 80%;
+    height: 1px;
+    background-color: #2459cd;
+    margin: 0 auto;
+} */
+
+.copyright {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .asocorp-footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .asocorp-footer__logo img {
+        width: 150px;
+    }
+    .asocorp-footer__links h5 {
+        font-size: 1rem;
+    }
+    .asocorp-footer__links ul li a {
+        font-size: 0.85rem;
+    }
+    .asocorp-footer hr {
+        width: 100%;
+    }
+    .copyright {
+        font-size: 0.8rem;
+        padding: 1rem 1rem;
+    }
+}
