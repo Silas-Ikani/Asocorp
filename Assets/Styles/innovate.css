@@ -145,14 +145,204 @@ body {
     color: #fff;
 }
 
-p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 2rem;
+/* Latest Innovation */
+.asocorp-innovation {
+    padding: 3rem 2rem;
+    background: #f9f9f9;
+}
+
+.asocorp-innovation h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.innovation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.innovation-container .item {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item .icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item p {
+    font-size: 0.8rem;
 }
 
 
+/* Ecosystem section */
+.asocorp-ecosystem {
+    padding: 5rem 2rem;
+    color: #fff;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.eco-feature {
+    flex: 1 1 30%;
+    padding: 1rem;
+}
+
+.eco-feature .icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    color: #2459cd;
+}
+
+.eco-feature h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: start;
+}
+
+.eco-feature p {
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: start;
+}
+
+.bottom-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 2rem;
+}
+
+.eco-image {
+    flex: 1 1 40%;
+    text-align: center;
+}
+
+.eco-image img {
+    width: 280px;
+    height: auto;
+}
+
+.eco-text {
+    flex: 1 1 50%;
+    padding: 0.5rem 3rem;
+}
+
+.eco-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.eco-text p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1.2rem;
+}
+
+.asocorp-btn {
+    display: inline-block;
+    background-color: #2459cd;
+    color: #000;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+
+/* Split section */
+.asocorp-split {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feature {
+    flex: 1;
+    padding: 2.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.feature h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem 0;
+    font-weight: 800;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}   
+
+.feature a {
+    background: #fff;
+    color: #007bff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 545;
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.feature-apps {
+    background: url(../Images/istockphoto-1212891045-612x612.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: right;
+    align-items: end;
+    padding-right: 4rem;
+
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.feature-infrastructure {
+    background: url(../Images/hero-bg.jpeg) no-repeat center center;
+    background-size: cover;
+    text-align: left;
+    align-items: start;
+    padding-left: 4rem;
+
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 /* Progress section */
@@ -239,75 +429,6 @@ p {
 
 
 
-
-/* Split section */
-.asocorp-split {
-    display: flex;
-    width: 100%;
-    min-height: 300px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.feature {
-    flex: 1;
-    padding: 2.5rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.feature h3 {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.feature h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 0.5rem 0;
-    font-weight: 800;
-}
-
-.feature p {
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-    line-height: 1.5;
-}   
-
-.feature a {
-    background: #fff;
-    color: #007bff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 545;
-    display: inline-block;
-    margin-top: 0.5rem;
-    text-align: center;
-}
-
-.feature-apps {
-    background: url(../Images/istockphoto-1212891045-612x612.jpg) no-repeat center center;
-    background-size: cover;
-    text-align: right;
-    align-items: end;
-    padding-right: 4rem;
-
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.feature-infrastructure {
-    background: url(../Images/hero-bg.jpeg) no-repeat center center;
-    background-size: cover;
-    text-align: left;
-    align-items: start;
-    padding-left: 4rem;
-
-    background-blend-mode: darken;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
 /* CTA section */
 .asocorp-cta {
