@@ -366,7 +366,22 @@ body {
     }
 }
 
-
+@media (max-width: 768px) {
+    .asocorp-navbar__logo img {
+        width: 120px;
+        height: auto;
+    }
+    .asocorp-navbar .mobile-menu-toggle {
+        top: 25px;
+        font-size: 1.8rem;
+    }
+    .asocorp-hero {
+        padding: 4rem 1rem;
+    }
+    .asocorp-hero p {
+        font-size: 0.8rem;
+    }
+}
 
 
 /* CTA section */

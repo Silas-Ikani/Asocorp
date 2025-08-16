@@ -158,6 +158,83 @@ p {
     margin-bottom: 2rem;
 }
 
+@media (max-width:960px) {
+    .asocorp-navbar {
+        padding: 1rem 2rem;
+        padding-left: auto;
+    }
+}
+
+/* Styles For Smaller Screens */
+@media (max-width: 768px) {
+    .asocorp-navbar {
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+        padding-left: auto;
+    }
+    
+    .asocorp-navbar__nav {
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .asocorp-navbar__nav.show {
+        display: flex;
+        z-index: 100;
+    }
+
+    .asocorp-navbar .mobile-menu-toggle {
+        display: block;
+        margin-left: auto;
+        color: #111;
+        position: absolute;
+        right: 2rem;
+        top: 2.3rem;
+        z-index: 100;
+    }
+
+    .asocorp-hero{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 6rem;
+        z-index: 0;
+    }
+    .asocorp-hero h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .asocorp-hero p {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    .asocorp-hero__btn {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .asocorp-navbar__logo img {
+        width: 120px;
+        height: auto;
+    }
+    .asocorp-navbar .mobile-menu-toggle {
+        top: 25px;
+        font-size: 1.8rem;
+    }
+    .asocorp-hero {
+        padding: 4rem 1rem;
+    }
+    .asocorp-hero p {
+        font-size: 0.8rem;
+    }
+}
+
 
 /* Customer Stories Section */
 .asocorp-customer-cards {
