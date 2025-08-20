@@ -171,28 +171,31 @@ p {
         flex-wrap: wrap;
         padding: 1rem 2rem;
         padding-left: auto;
+        position: relative;
     }
-    
+
     .asocorp-navbar__nav {
+        background: rgba(101, 101, 101, 0.7);
         display: none;
-        width: 100%;
-        margin-top: 1rem;
         flex-direction: column;
         gap: 0.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+        z-index: 999;
     }
     .asocorp-navbar__nav.show {
         display: flex;
-        z-index: 100;
     }
 
     .asocorp-navbar .mobile-menu-toggle {
-        display: block;
-        margin-left: auto;
-        color: #111;
         position: absolute;
         right: 2rem;
-        top: 2.3rem;
-        z-index: 100;
+        top: 2.2rem;     
+        z-index: 1100; 
+        display: block;
     }
 
     .asocorp-hero{
@@ -210,7 +213,7 @@ p {
     }
     .asocorp-hero p {
         font-size: 0.9rem;
-        margin-bottom: 0.5rem;
+        max-width: 550px;
     }
     .asocorp-hero__btn {
         font-size: 0.85rem;
@@ -218,7 +221,7 @@ p {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .asocorp-navbar__logo img {
         width: 120px;
         height: auto;
@@ -322,6 +325,7 @@ p {
 /* Responsive */
 @media (max-width: 768px) {
     .asocorp-customer-cards {
+        padding: 3rem 1rem;
         flex-direction: column;
         align-items: center;
     }
@@ -485,11 +489,7 @@ p {
 
 @media (max-width: 768px) {
     .asocorp-footer__container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 2rem;
-        padding: 2rem 1rem;
+        padding: 4rem 1.5rem;
     }
     .asocorp-footer__logo img {
         width: 150px;
@@ -506,5 +506,15 @@ p {
     .copyright {
         font-size: 0.8rem;
         padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .asocorp-footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
     }
 }

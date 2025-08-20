@@ -165,28 +165,31 @@ body {
         flex-wrap: wrap;
         padding: 1rem 2rem;
         padding-left: auto;
+        position: relative;
     }
-    
+
     .asocorp-navbar__nav {
+        background: rgba(101, 101, 101, 0.7);
         display: none;
-        width: 100%;
-        margin-top: 1rem;
         flex-direction: column;
         gap: 0.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 2rem;
+        z-index: 999;
     }
     .asocorp-navbar__nav.show {
         display: flex;
-        z-index: 100;
     }
 
     .asocorp-navbar .mobile-menu-toggle {
-        display: block;
-        margin-left: auto;
-        color: #111;
         position: absolute;
         right: 2rem;
-        top: 2.3rem;
-        z-index: 100;
+        top: 2.5rem;     
+        z-index: 1100; 
+        display: block;
     }
 
     .asocorp-hero{
@@ -195,7 +198,7 @@ body {
         text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 6rem;
+        padding-top: 5rem;
         z-index: 0;
     }
     .asocorp-hero h1 {
@@ -209,10 +212,13 @@ body {
     .asocorp-hero__btn {
         font-size: 0.85rem;
         padding: 0.6rem 1.2rem;
-    }    
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    .asocorp-navbar {
+        padding: 0.5rem 1.5rem;
+    }
     .asocorp-navbar__logo img {
         width: 120px;
         height: auto;
@@ -305,6 +311,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .asocorp-about {
+        padding: 3rem 1rem;
+    }
     .asocorp-about__container {
         flex-direction: column;
         text-align: center;
@@ -399,6 +408,18 @@ body {
     margin-bottom: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    .asocorp-goals {
+        padding: 3rem 1.5rem;
+    }
+    .goals-container {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .vision p {
+        font-size: 0.85rem;
+    }
+}
 
 /* Latest Innovation */
 .asocorp-innovation {
@@ -448,6 +469,9 @@ body {
 
 /* Styles For Smaller Screens */
 @media (max-width: 768px) {
+    .asocorp-innovation {
+        padding: 3rem 1rem;
+    }
     .asocorp-innovation h2 {
         text-align: center;
     }
@@ -723,10 +747,9 @@ body {
 .service-item p {
     font-size: 0.95rem;
     color: #555;
-    margin-bottom: 1rem;
     max-width: 400px;
 }
-
+/* 
 .service-item a {
     color: #2459cd;
     text-decoration: none;
@@ -734,13 +757,21 @@ body {
 }
 .service-item a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Styles For SMaller Screens */
 @media (max-width: 768px) {
-    .asocorp-service {
+    .asocorp-services {
         padding: 2rem 1rem;
         text-align: center;
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    .service-grid .service-item {
+        padding: 0.5rem 0;
+        align-items: center;
     }
 }
 
@@ -898,11 +929,7 @@ body {
 
 @media (max-width: 768px) {
     .asocorp-footer__container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 2rem;
-        padding: 2rem 1rem;
+        padding: 4rem 1.5rem;
     }
     .asocorp-footer__logo img {
         width: 150px;
@@ -919,5 +946,15 @@ body {
     .copyright {
         font-size: 0.8rem;
         padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .asocorp-footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
     }
 }
