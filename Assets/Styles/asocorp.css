@@ -10,6 +10,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     color: #fff;
     background-color: #040429;
+    overflow: hidden;
 }
 
 .asocorp-header {
