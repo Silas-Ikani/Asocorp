@@ -10,7 +10,6 @@ body {
     font-family: 'Noto Sans', sans-serif;
     color: #111;
     background-color: #040429;
-    overflow: hidden;
 }
 
 .asocorp-header {
@@ -374,20 +373,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.mission ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: circle;
-    padding: 0 1.2rem;
-}
-
-.mission ul li {
-    font-size: 0.9rem;
-    line-height: 2;
-    color: #444;
-}
-
 .vision {
     flex: 1;
     display: flex;
@@ -501,10 +486,10 @@ body {
 
 .timeline-line {
     position: absolute;
-    top: 22%;
+    top: 20%;
     left: 50%;
     width: 4px;
-    height: 59%;
+    height: 56%;
     background: #2459cd;
     transform: translateX(-50%);
     z-index: 1;
@@ -689,10 +674,10 @@ body {
     color: #fff;
     margin-top: 1rem;
     padding-bottom: 0.1rem;
-    transition: border-color 0.3s ease;
+    transition: text-decoration 0.3s ease;
 }
 .inclusion-link:hover {
-    border-color: #2459cd;
+    text-decoration: underline;
 }
 
 
@@ -721,7 +706,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-columns: 1fr;
-    /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
     gap: 1rem;
 }
 
@@ -747,17 +731,8 @@ body {
 .service-item p {
     font-size: 0.95rem;
     color: #555;
-    max-width: 400px;
+    max-width: 350px;
 }
-/* 
-.service-item a {
-    color: #2459cd;
-    text-decoration: none;
-    font-weight: 500;
-}
-.service-item a:hover {
-    text-decoration: underline;
-} */
 
 /* Styles For SMaller Screens */
 @media (max-width: 768px) {

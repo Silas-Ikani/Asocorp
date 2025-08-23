@@ -13,7 +13,7 @@ body {
 }
 
 .asocorp-header {
-    background-image: url(../Images/Backgrounds/istockphoto-521697994-612x612.jpg);
+    background-image: url(../Images/Backgrounds/PartnersBg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@ body {
         height: auto;
     }
     .asocorp-navbar .mobile-menu-toggle {
-        top: 25px;
+        top: 30px;
         font-size: 1.8rem;
     }
     .asocorp-hero {
@@ -249,14 +249,13 @@ body {
     font-size: 0.9rem;
     color: #555;
     line-height: 1.5;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .asocorp-partners .content-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     gap: 3rem;
 }
 
@@ -277,6 +276,20 @@ body {
 
 .content-container .text-col p {
     font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.content-container .text-col ul {
+    list-style: outside square;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-container .text-col ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #555;
 }
 
 @media (max-width: 768px) {

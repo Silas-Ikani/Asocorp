@@ -10,7 +10,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     color: #fff;
     background-color: #040429;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .asocorp-header {
@@ -234,10 +234,24 @@ body {
     .asocorp-hero__btn {
         font-size: 0.85rem;
         padding: 0.6rem 1.2rem;
+    }    
+}
+
+@media (max-width: 480px) {
+    .asocorp-navbar__logo img {
+        width: 120px;
+        height: auto;
     }
-
-
-    
+    .asocorp-navbar .mobile-menu-toggle {
+        top: 25px;
+        font-size: 1.8rem;
+    }
+    .asocorp-hero {
+        padding: 4rem 1rem;
+    }
+    .asocorp-hero p {
+        font-size: 0.8rem;
+    }
 }
 
 /* Section 2 */
@@ -371,22 +385,6 @@ body {
     }
 }
 
-@media (max-width: 768px) {
-    .asocorp-navbar__logo img {
-        width: 120px;
-        height: auto;
-    }
-    .asocorp-navbar .mobile-menu-toggle {
-        top: 25px;
-        font-size: 1.8rem;
-    }
-    .asocorp-hero {
-        padding: 4rem 1rem;
-    }
-    .asocorp-hero p {
-        font-size: 0.8rem;
-    }
-}
 
 
 /* CTA section */
@@ -408,6 +406,9 @@ body {
 }
 
 .asocorp-cta p {
+    max-width: 600px;
+    display: flex;
+    justify-self: center;
     font-size: 0.9rem;
     margin-bottom: 1.8rem;
     line-height: 1.6;
@@ -488,7 +489,7 @@ body {
     
 }
 .asocorp-about__text h5 span {
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 .asocorp-about__text h1 {
@@ -497,7 +498,8 @@ body {
     font-weight: 700;
 }
 .asocorp-about__text p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    color: #ccc;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -568,69 +570,130 @@ body {
     background-position: center;
     background-blend-mode: overlay;
     background-color: rgb(4, 4, 41);
-    padding: 5rem 2.5rem;
-}
-.asocorp-blog h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-    text-align: center;
+    padding: 3rem 2rem;
 }
 
 .asocorp-blog__container {
+    padding: 1.5rem 0;
+    border-top: 2px solid #2459cd;
+}
+
+.asocorp-blog h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: start;
+}
+
+.blogpost-container {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.asocorp-blog__container .blog-post {
+.blog-left {
+    flex: 1;
+    max-width: 600px;
+}
+
+.blog-left .blog-card {
+    padding: 0;
+}
+
+.blog-card .blogcard-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-card .blogcard-content a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.blogcard-content a:hover {
+    text-decoration: underline;
+}
+
+.blog-card .blogcard-content .blogcard-meta {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 1.5rem;
+}
+.blogcard-content .blogcard-meta p {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+.blogcard-content .blogcard-meta span {
+    margin: 0 0.5rem;
+    color: #ddd;
+}
+
+.blog-right {
     display: flex;
     flex-direction: column;
+    align-items: start;
     justify-content: space-between;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    width: 350px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-.asocorp-blog__container .blog-post:hover {
-    transform: translateY(-5px);
+    gap: 1rem;
+    flex: 1;
+    max-width: 650px;
+    border-left: 2px solid #2459cd;
+    padding: 0 0 0 1rem;
 }
 
-.asocorp-blog__container .blogpost-img img {
+.blog-right hr {
+    border: none;
+    height: 2px;
     width: 100%;
-    height: 200px;
-    display: block;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
-    overflow: clip;
+    background-color: #2459cd;
+    margin: 1rem 0;
 }
 
-.asocorp-blog__container .blogpost-content {
-    padding: 2rem 1.2rem;
+.blog-right .blog-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-right .blogpost-img img {
+    width: 230px;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-right .blogpost-content {
+    padding: 0 0.5rem 0 0;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.asocorp-blog__container .blogpost-content h3 {
-    font-size: 1.4rem;
+.blog-right .blogpost-content a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 400;
 }
-
-.asocorp-blog__container .blogpost-content p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+.blogpost-content a:hover {
+    text-decoration: underline;
 }
 
-.asocorp-blog__container .blogpost-content a {
-    color: #2459cd;
-    text-decoration: none;
-    font-weight: 400;
-    margin-top: auto;
-    transition: color 0.3s ease;
+ .blogpost-content .blog-meta {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.blogpost-content .blog-meta p {
+    font-size: 0.8rem;
+    color: #bbb;
+}
+.blogpost-content .blog-meta span {
+    margin: 0 0.5rem;
+    color: #ddd;
 }
 
 @media (max-width: 768px) {
@@ -638,24 +701,61 @@ body {
         font-size: 1.8rem;
         text-align: center;
     }
-    .asocorp-blog__container {
+    .blogpost-container {
         flex-direction: column;
         align-items: center;
     }
-    .asocorp-blog__container .blog-post {
-        width: 100%;
-        max-width: 400px;
+    .blog-left {
+        margin-bottom: 2rem;
     }
-    .asocorp-blog__container .blogpost-content {
-        padding: 1.5rem 1rem;
+    .blog-left, .blog-right {
+        max-width: 100%;
     }
-    .asocorp-blog__container .blogpost-content h3 {
+    .blog-right hr {
+        width: 90%;
+    }
+    .blog-right .blogpost-content a {
         font-size: 1.2rem;
     }
-    .asocorp-blog__container .blogpost-content p {
-        font-size: 0.85rem;
-    }
+    
 }
+
+@media (max-width: 480px) {
+    .asocorp-blog {
+        padding: 2rem 1rem;
+    }
+    .blog-left {
+        text-align: center;
+    }
+    .blog-left .blog-card .blogcard-meta {
+        justify-content: center;
+    }
+    .blog-right {
+        border-left: none;
+        padding: 0;
+    }
+    .blog-right .blog-post {
+       flex-direction: column-reverse;
+       align-items: center;
+       text-align: center;
+   }
+   .blog-right hr {
+       width: 100%;
+       margin: 0.5rem 0;
+   }
+   .blog-right .blogpost-content {
+       padding: 0;
+   }
+   .blog-right .blogpost-img img {
+       width: 100%;
+       max-width: 300px;
+   }
+   .blog-post .blog-meta {
+    align-items: center;
+    justify-content: center;
+   }
+}
+
 
 
 
@@ -739,7 +839,6 @@ hr {
     .stat h3 {
         font-size: 2rem;
     }
-    
 }
 
 @media (max-width: 768px) {
