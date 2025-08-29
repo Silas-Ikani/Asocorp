@@ -258,10 +258,10 @@ p {
     flex-direction: column;
     justify-content: space-between;
     background: #fff;
+    text-align: center;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.211);
     width: 300px;
-    overflow: hidden;
     transition: transform 0.3s ease;
 }
 
@@ -272,18 +272,20 @@ p {
 .card-img {
     background: rgba(142, 142, 142, 0.387);
     width: 100%;
-    height: 120px;
+    height: 90px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
 }
 
 .asocorp-customer-cards .card img {
-    max-width: 130px;
+    max-width: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 
 .asocorp-customer-cards .card-body {
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -291,36 +293,39 @@ p {
 }
 
  .card .card-body h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: #111;
-    font-weight: 300;
+    font-weight: 400;
 }
 
  .card .card-body p {
+    position: relative;
     font-size: 0.9rem;
-    font-weight: 450;
+    font-weight: 400;
+    font-style: italic;
     line-height: 1.5;
-    color: #444;
-    margin-bottom: 1rem;
+    color: #555;
 }
 
- .card .card-body .card-btn {
-    display: inline-block;
-    text-align: center;
-    align-self: center;
-    padding: 0.5rem 1rem;
-    background: #2459cd;
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.85rem;
-    border-radius: 4px;
-    transition: background 0.3s ease;
+.card .card-body p span {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #2459cd;
+    font-size: 1rem;
 }
 
-.asocorp-customer-cards .card-btn:hover {
-    background: #005ec0;
+.card .card-body .card-info {
+    padding: 0.5rem;
+    border-top: 1px solid #ddd;
 }
+
+.card .card-info h5 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #666;
+}
+ 
 
 /* Responsive */
 @media (max-width: 768px) {

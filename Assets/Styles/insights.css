@@ -280,6 +280,11 @@ p {
     flex: 1;
 }
 
+.blog-content img {
+    width: 30px;
+    border-radius: 50%;
+}
+
 .blog-content h3 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
