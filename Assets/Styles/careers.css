@@ -158,7 +158,6 @@ body {
     }
 }
 
-/* Styles For Smaller Screens */
 @media (max-width: 768px) {
     .asocorp-navbar {
         flex-wrap: wrap;
@@ -227,7 +226,7 @@ body {
         font-size: 1.8rem;
     }
     .asocorp-hero {
-        padding: 4rem 1rem;
+        padding: 3rem 1rem;
     }
     .asocorp-hero p {
         font-size: 0.8rem;
@@ -293,8 +292,21 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .asocorp-about {
+        padding: 3rem 1rem;
+    }
 
-/* LAtest Jobs Section */
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Latest Jobs Section */
 .asocorp-jobs {
     padding: 4rem 8rem;
     background: #fff;
@@ -426,6 +438,24 @@ body {
     .asocorp-connect {
         flex-direction: column;
         padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .connect-box {
+        min-height: 200px;
+        padding: 1rem;
+    }
+    .connect-text {
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .connect-text h2 {
+        font-size: 1.5rem;
+    }
+    .social-icons {
+        justify-content: center;
     }
 }
 

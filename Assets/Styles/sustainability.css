@@ -176,7 +176,7 @@ body {
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 0.5rem 2rem;
         z-index: 999;
     }
     .asocorp-navbar__nav.show {
@@ -186,7 +186,7 @@ body {
     .asocorp-navbar .mobile-menu-toggle {
         position: absolute;
         right: 2rem;
-        top: 2.2rem;     
+        top: 2.5rem;     
         z-index: 1100; 
         display: block;
     }
@@ -197,7 +197,7 @@ body {
         text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 6rem;
+        padding-top: 5rem;
         z-index: 0;
     }
     .asocorp-hero h1 {
@@ -215,6 +215,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .asocorp-navbar {
+        padding: 0.5rem 1.5rem;
+    }
     .asocorp-navbar__logo img {
         width: 120px;
         height: auto;
@@ -224,12 +227,17 @@ body {
         font-size: 1.8rem;
     }
     .asocorp-hero {
-        padding: 4rem 1rem;
+        padding: 2rem 1rem;
+    }
+    .asocorp-hero h1 {
+        line-height: 1;
+        margin-bottom: 0.2rem;
     }
     .asocorp-hero p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 }
+
 
 /* Metrics section */
 .asocorp-metrics {
@@ -308,10 +316,13 @@ body {
 
 /* Responsive */
 @media (max-width: 480px) {
-  .metrics-grid {
-    flex-direction: column;
-    align-items: center;
-  }
+    .asocorp-metrics {
+        padding: 3rem 1rem;
+    }
+    .metrics-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -413,7 +424,15 @@ body {
     }
 }
 
-
+@media (max-width: 480px) {
+    .asocorp-inclusion {
+        padding: 3rem 0.5rem;
+    }
+    .inclusion-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
 
 
 /* Resource section */
@@ -494,6 +513,11 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .asocorp-resources {
+        padding: 3rem 1rem;
+    }
+}
 
 
 

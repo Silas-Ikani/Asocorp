@@ -165,7 +165,6 @@ p {
     }
 }
 
-/* Styles For Smaller Screens */
 @media (max-width: 768px) {
     .asocorp-navbar {
         flex-wrap: wrap;
@@ -183,7 +182,7 @@ p {
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem 2rem;
+        padding: 0.5rem 2rem;
         z-index: 999;
     }
     .asocorp-navbar__nav.show {
@@ -193,7 +192,7 @@ p {
     .asocorp-navbar .mobile-menu-toggle {
         position: absolute;
         right: 2rem;
-        top: 2.2rem;     
+        top: 2.5rem;     
         z-index: 1100; 
         display: block;
     }
@@ -204,7 +203,7 @@ p {
         text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 6rem;
+        padding-top: 5rem;
         z-index: 0;
     }
     .asocorp-hero h1 {
@@ -213,7 +212,7 @@ p {
     }
     .asocorp-hero p {
         font-size: 0.9rem;
-        max-width: 550px;
+        margin-bottom: 0.5rem;
     }
     .asocorp-hero__btn {
         font-size: 0.85rem;
@@ -222,6 +221,9 @@ p {
 }
 
 @media (max-width: 480px) {
+    .asocorp-navbar {
+        padding: 0.5rem 1.5rem;
+    }
     .asocorp-navbar__logo img {
         width: 120px;
         height: auto;
@@ -331,16 +333,24 @@ p {
 @media (max-width: 768px) {
     .asocorp-customer-cards {
         padding: 3rem 1rem;
-        flex-direction: column;
-        align-items: center;
     }
-
+    .asocorp-customer-cards .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 1rem 0.5rem;
+    }
     .asocorp-customer-cards .card {
-        width: 90%;
+        width: 100%;
     }
 }
 
-
+@media (max-width: 480px) {
+    .asocorp-customer-cards .card {
+        width: 100%;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* CTA section */
 .asocorp-cta {

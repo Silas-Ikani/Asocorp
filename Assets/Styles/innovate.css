@@ -271,12 +271,26 @@ body {
     font-size: 0.8rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     .asocorp-innovation {
-        padding: 2.5rem 1rem;
+        padding: 3rem 1rem;
     }
     .asocorp-innovation h2 {
         font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .innovation-container {
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .innovation-container {
+        flex-direction: column;
+    }
+    .item {
+        max-width: 100%;
     }
 }
 
@@ -600,6 +614,19 @@ body {
     .circular-bar .inner-circle {
         width: 80px;
         height: 80px;
+    }
+
+    .circular-bar .percent {
+        font-size: 1.3rem;
+        font-weight: 700;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .progress-text .progress-box p {
+        color: #555;
+        font-size: 0.9rem;
+        font-weight: 400;
     }
 
 }

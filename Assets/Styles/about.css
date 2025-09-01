@@ -453,7 +453,7 @@ body {
 }
 
 /* Styles For Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     .asocorp-innovation {
         padding: 3rem 1rem;
     }
@@ -464,6 +464,15 @@ body {
     .innovation-container {
         align-items: center;
         gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .innovation-container {
+        flex-direction: column;
+    }
+    .item {
+        max-width: 100%;
     }
 }
 
@@ -680,6 +689,58 @@ body {
     text-decoration: underline;
 }
 
+/* Styles For Smaller Screens */
+@media (max-width: 768px) {
+    .inclusion-content {
+        max-width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: left;
+    }
+
+    .inclusion-content i {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .inclusion-content h3 {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+
+    .inclusion-content p {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .inclusion-box {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .inclusion-box h2 {
+        font-size: 2.2rem;
+    }
+
+    .inclusion-box p {
+        font-size: 0.85rem;
+    }
+
+    .inclusion-link {
+        font-size: 0.9rem;
+        margin-top: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .asocorp-inclusion {
+        padding: 3rem 0.5rem;
+    }
+    .inclusion-content {
+        max-width: 100%;
+        text-align: center;
+    }
+}
 
 
 

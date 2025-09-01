@@ -285,6 +285,9 @@ body {
 
 /* Styles For Smaller Screens */
 @media (max-width: 768px) {
+    .asocorp-section2 {
+        padding: 2rem 1rem;
+    }
     .asocorp-section2 .section-container {
         padding: 0 1rem;
         max-width: 100%;
@@ -535,6 +538,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .asocorp-about {
+        padding: 3rem 1rem;
+    }
     .asocorp-about__container {
         flex-direction: column;
         text-align: center;
@@ -826,6 +832,7 @@ hr {
 
 @media (max-width: 480px) {
     .asocorp-stats {
+        padding: 3rem 1.2rem;
         flex-direction: column;
         align-items: center;
         text-align: center;
