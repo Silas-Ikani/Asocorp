@@ -441,11 +441,12 @@ body {
 }
 
 .feature p {
+    max-width: 500px;
     font-size: 0.9rem;
     color: #ccc;
     margin: 0.5rem 0;
     line-height: 1.5;
-}   
+}
 
 .feature a {
     background: #fff;

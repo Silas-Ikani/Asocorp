@@ -624,7 +624,7 @@ textarea {
 
 @media (max-width: 768px) {
     .asocorp-footer__container {
-        padding: 3rem 1.5rem;
+        padding: 4rem 1.5rem;
     }
     .asocorp-footer__logo img {
         width: 150px;
@@ -632,4 +632,24 @@ textarea {
     .asocorp-footer__links h5 {
         font-size: 1rem;
     }
-    .asocorp-footer__links u
+    .asocorp-footer__links ul li a {
+        font-size: 0.85rem;
+    }
+    .asocorp-footer hr {
+        width: 100%;
+    }
+    .copyright {
+        font-size: 0.8rem;
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .asocorp-footer__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+}
